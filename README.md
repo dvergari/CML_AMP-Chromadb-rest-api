@@ -55,6 +55,15 @@ The "Extra small" tier should be enough
 # Check results
 After both the AMP and the flow are deployed, you can query the documents in chromadb using the jupyter notebook in `/notebooks/query_chromadb.ipynb`
 
+## Technologies Used
+#### Open-Source Models and Utilities
+- [all-mpnet-base-v2](https://huggingface.co/sentence-transformers/sentence-transformers/all-mpnet-base-v2/resolve/main/all-mpnet-base-v2.tar.gz)
+   - Vector Embeddings Generation Model
+#### Vector Database
+- [Chroma](https://github.com/chroma-core/chroma)
+#### Dataset
+- [Customer support ticket dataset from Kaggle](https://www.kaggle.com/datasets/suraj520/customer-support-ticket-dataset)
+
 
 
 
