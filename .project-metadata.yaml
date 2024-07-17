@@ -3,7 +3,6 @@ description: A rest API server to upsert documents into chromadb
 author: Davide Vergari (dvergari_at_cloudera_dot_com)
 specification_version: 1.0
 prototype_version: 1.0
-date: "2024-17-07"
 
 
 environment_variables:
@@ -31,7 +30,6 @@ tasks:
     kernel: python3
     cpu: 2
     memory: 8
-    
   - type: run_session
     name: Setup Chroma Vector DB
     script: 01_setup-chroma/setup-chroma.py
