@@ -40,7 +40,7 @@ tasks:
   - type: start_application
     name: CML Chroma Server REST API Server
     subdomain: cml-chroma-server
-    script: 2_application/chroma-app.py
+    script: 02_application/chroma_app.py
     short_summary: Launch Chroma Server
     long_summary: Launch Chroma Server REST API application. Remember to enable unauthenticated app access for external access to the UI.
     cpu: 2
