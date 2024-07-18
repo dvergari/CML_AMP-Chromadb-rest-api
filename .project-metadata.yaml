@@ -42,6 +42,7 @@ tasks:
     subdomain: cml-chroma-server
     script: 02_application/chroma_app.py
     short_summary: Launch Chroma Server
+    bypass_authentication: true
     long_summary: Launch Chroma Server REST API application. Remember to enable unauthenticated app access for external access to the UI.
     cpu: 2
     memory: 8
