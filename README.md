@@ -12,6 +12,7 @@ In a CML workspace, click "New Project", add a Project Name, select "AMPs" as th
 In the "Configure Project" configure the following environment variables:
 * COLLECTION -> The name of the collection to be created in chromadb
 * DEBUG -> Set to 1 to enable debug (may impact performance)
+* DIRECTORY -> The container on S3 or ADSL where to load test data. User must have privileges to write to this container (either through RAZ or IDBroker Mapping). This container should also be set in the companion CDF Flow
 
 **Important: once the deploy finishes, do not forget to allow unauthenticated access to the application**  [<link>](https://docs.cloudera.com/machine-learning/cloud/applications/topics/ml-securing-applications.html)
 
