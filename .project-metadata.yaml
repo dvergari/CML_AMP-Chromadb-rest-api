@@ -15,6 +15,10 @@ environment_variables:
     default: 0
     description: "Enter '1' to enable application debug. May impact performance"
     required: false
+
+  DIRECTORY:
+    default: "/data/files"
+    description: "The container on S3 or ADSL where to load test data. User must have privileges to write to this container (either through RAZ or IDBroker Mapping)"
   
 
 runtimes:
@@ -34,6 +38,13 @@ tasks:
     name: Setup Chroma Vector DB
     script: 01_setup-chroma/setup-chroma.py
     short_summary: Setup Chroma Vector DB
+    kernel: python3
+    cpu: 1
+    memory: 2
+  - type: run_session
+    name: Load test data
+    script: utility/load_test_data.py
+    short_summary: Load test data
     kernel: python3
     cpu: 1
     memory: 2
