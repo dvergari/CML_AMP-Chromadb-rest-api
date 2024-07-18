@@ -8,13 +8,18 @@ The companion CDF flow reads  some customer support tickets from a json file on 
 
 # Deployment
 ## AMP Deploy
+**Important: before starting the deployment, allow unauthenticated access for the application on the workspace setting** [<link>](https://docs.cloudera.com/machine-learning/cloud/applications/topics/ml-securing-applications.html)
+
+<img width="480" alt="image" src="https://github.com/user-attachments/assets/83dd6578-52ea-45d1-a528-017c40c28f05">
+
+
 In a CML workspace, click "New Project", add a Project Name, select "AMPs" as the Initial Setup option, copy in the [repo URL](https://github.com/dvergari/CML_AMP-Chromadb-rest-api.git), click "Create Project".
 In the "Configure Project" configure the following environment variables:
 * COLLECTION -> The name of the collection to be created in chromadb
 * DEBUG -> Set to 1 to enable debug (may impact performance)
 * DIRECTORY -> The container on S3 or ADSL where to load test data. User must have privileges to write to this container (either through RAZ or IDBroker Mapping). This container should also be set in the companion CDF Flow
 
-**Important: once the deploy finishes, do not forget to allow unauthenticated access to the application**  [<link>](https://docs.cloudera.com/machine-learning/cloud/applications/topics/ml-securing-applications.html)
+  [<link>](https://docs.cloudera.com/machine-learning/cloud/applications/topics/ml-securing-applications.html)
 
 
 ## CDF Flow deploy
